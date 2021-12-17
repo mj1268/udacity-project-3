@@ -1,3 +1,11 @@
+language: node_js
+node_js:
+  - 14
+
+services:
+  - docker
+
+script:
 - docker build -t udagram-api-feed ./udagram-api-feed
 - docker build -t udagram-api-user ./udagram-api-user
 - docker build -t udagram-frontend ./udagram-frontend
